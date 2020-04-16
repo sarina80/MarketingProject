@@ -2,10 +2,10 @@ package model;
 
 import java.util.ArrayList;
 
-public class Customer extends Account {
+public class Costumer extends Account {
     private ArrayList<BuyAndSellLog> historyBuy;
 
-    public Customer(String username, String password) {
+    public Costumer(String username, String password) {
         super(username, password);
     }
 
