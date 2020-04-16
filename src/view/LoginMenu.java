@@ -4,7 +4,7 @@ import model.Account;
 
 import java.util.HashMap;
 
-public class LoginMenu {
+public class LoginMenu extends Menu{
     private String username;
     private String password;
 
