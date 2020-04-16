@@ -21,6 +21,7 @@ public class Off {
         offs.add(this);
     }
 
+
     public String getOffID() {
         return offID;
     }
@@ -72,5 +73,14 @@ public class Off {
     public static ArrayList<String> getOffIds() {
         ArrayList<String> offIds = new ArrayList<>();
         return offIds;
+    }
+
+    public static Off getOffById(String offID) {
+        for (Off off : offs) {
+            if (off.getOffID().equals(offID)) {
+                return off;
+            }
+        }
+        return null;
     }
 }
